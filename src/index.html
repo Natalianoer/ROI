@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ROI</title>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="calculator">
+                <div class="calculator__range">
+                    <div class="range__general range__number">
+                        <span>Number of units</span>
+                        <div class="range__general_result">
+                            <span>1</span>
+                            <span class="resultNumber"></span>
+                            <span>500</span>
+                        </div>
+                        <div class="inputProgress">
+                            <input type="range" min="1" max="500" value="0" class="range__circle inputRange" id="myRange">
+                            <span class="progress"></span>
+                        </div>
+
+                    </div>
+                    <div class="range__general range__cost">
+                        <span>Cost per unit per year</span>
+                        <div class="range__general_result">
+                            <span>500</span>
+                            <span class="resultCost">€</span>
+                            <span>10,000</span>
+                        </div>
+                        <div class="inputProgress">
+                            <input type="range" min="500" max="10000" value="0" class="range__circle inputRange" id="myRange">
+                            <span class="progress"></span>
+                        </div>
+
+                    </div>
+                    <div class="range__general range__saving">
+                        <span>Saving per unit</span>
+                        <div class="range__general_result">
+                            <span>5</span>
+                            <span class="resultSaving"></span>
+                            <span>60</span>
+                        </div>
+                        <div class="inputProgress">
+                            <input type="range" min="5" max="60" value="0" class="range__circle inputRange" id="myRange">
+                            <span class="progress"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calculator__input">
+                    <div class="input__general calc__implementation">
+                        <span>Implementation costs</span>
+                        <input type="text" placeholder="4,919 €" name="implementation" value="" class="input__roi">
+                    </div>
+                    <div class="input__general calc__monthly">
+                        <span>Monthly savings</span>
+                        <input type="text" placeholder="3,662 €" name="monthly" value="" class="input__roi">
+                    </div>
+                    <div class="input__general calc__roi">
+                        <span>ROI in months</span>
+                        <input type="text" placeholder="1.34" name="roi" value="" class="input__roi" disabled>
+                    </div>
+                </div>
+                <form class="forms" action="index.html" method="post">
+                    <p>Send us your result and we will help you with your evaluation <span>*</span></p>
+                    <input type="email" name="email" value="" placeholder="Email adress" required>
+                    <button type="submit" name="button" class="btn">Send my result</button>
+                </form>
+            </div>
+
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
